@@ -1,0 +1,461 @@
+@font-face {
+    font-family: Nasa;
+    src: url(nasalization-rg.otf);
+}
+@font-face {
+    font-family: Donaz;
+    src: url(donaz.ttf);
+}
+@font-face {
+    font-family: integral;
+    src: url(./Demo_Fonts/Fontspring-DEMO-integralcf-extrabold.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    cursor: none;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.cursor{
+    pointer-events: none;
+    z-index: 1001;
+    position: absolute;
+}
+.cursor img{
+    width: 100px;
+}
+nav{
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    overflow: hidden;
+}
+nav .logo{
+    /* margin-left: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li{
+    width: 120px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    /* background-color: rgba(240, 255, 255, 0.239);
+    backdrop-filter: blur(10px);
+    border-radius: 10px; */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-family: Nasa;
+}
+nav ul li p:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.active{
+    background: rgb(0, 136, 255);
+    color: white;
+}
+section{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* overflow-x: auto; */
+}
+.sec1{
+    background: url(view-of-earth-from-moon-4k-wallpaper.jpg);
+    background-color: black;
+    background-size: cover;
+    z-index: 1;
+}
+.sec1 .back_ground{
+    /* position: absolute; */
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+}
+.sec1 .back_ground img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* .sec1 .content{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.sec1 .content .earth{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sec1 .content .earth img{
+    min-width: 1300px;
+    max-width: 1300px;
+    aspect-ratio: 2/1;
+    max-height: 100%;
+    min-height: 700px; 
+    bottom: 0px;
+} */
+.sec1 .earth{
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    pointer-events: none;
+}
+.sec1 .blue_wave{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    pointer-events: none;
+}
+.sec1 .blue_wave img{
+    width: 900px;
+}
+.sec1 .earth img{
+    /* aspect-ratio: 2/1; */
+    min-height: 100%;
+    /* min-width: 1800px;
+    max-width: 2000px; */
+    object-fit: cover;
+    position: relative;
+    /* right: -50%; */
+    bottom: 0px;
+    z-index: 10;
+}
+.sec1 .main_text{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sec1 .main_text .all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 110%;
+    /* background: rgba(169, 212, 255, 0.336);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(10px); */
+}
+.sec1 .main_text img{
+    z-index: 10;
+    position: absolute;
+    width: 450px;
+}
+
+.sec1 .main_text .all .text{
+    width: 80%;
+}
+.sec1 .main_text h1{
+    /* color: rgba(255, 255, 255, 0); */
+    font-family: integral;
+    font-size: 90px;
+    text-shadow: black 10px 5px 5px ;
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255); */
+    /* background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(10px); */
+}
+.sec1 .main_text h1:nth-child(2){
+    font-size: 40px;
+}
+.sec1 .main_text h2{
+    font-family: integral;
+    font-size: 70px;
+    color: rgb(208, 0, 0);
+    z-index: 100;
+    /* text-shadow: white 0px 0px 10px; */
+}
+
+/* .sec1 .main_text h2{
+    font-size: 60px;
+    color: white;
+    z-index: 12;
+    animation: header;
+} */
+
+.sec1 .wave {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 708px;
+    background-size: 1000px 1000px;
+}
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  background: url(./wave.png);
+  z-index: 3;
+  opacity: 0.1;
+  rotate: 140deg;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2 {
+  background: url(./wave.png);
+  animation: animate2 15s linear infinite;
+  z-index: 2;
+  rotate: 20deg;
+  opacity: 0.2;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 {
+  background: url(./wave.png);
+  animation: animate3 30s linear infinite;
+  z-index: 1;
+  opacity: 0.1;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+.sec1 .astr{
+    z-index: 11;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1 .astr img{
+    width: 400px;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width:100%;
+    height: 100vh;
+    background-color: aqua;
+    overflow-x: auto;
+}
+.container .box{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    height: 90%;
+    background-color: rgb(245, 207, 92);
+} */
+.container{
+    background: url(188983.jpg);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* gap: 30px; */
+    overflow-x: auto;
+}
+.container .box{
+    font-size: 100px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    height: 100vh;
+}
+.container .box .row{
+    opacity: 0.5;
+    width: 60px;
+}
+.container .box .row:first-child{
+    rotate: 90deg;
+    margin-right: 20px;
+}
+.container .box .row:nth-child(3){
+    rotate: 270deg;
+    margin-left: 20px;
+}
+.container .box .inner{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    border-radius: 30px;
+}
+.container .box .circle{
+    position: relative;
+    bottom: -40%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.container .line{
+    position: relative;
+    /* position: relative; */
+    /* margin-bottom: -50%; */
+    float: inline-end;
+    bottom: 80px;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.container .box .inner h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+}
+.container .box .inner .content{
+    /* overflow: hidden; */
+    width: 95%;
+    height: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.container .box .inner .content img{
+    width: 50%;
+}
+.container .box .inner .content img:nth-child(4){
+    min-height: 10%;
+}
+.container .box .inner .content p{
+    overflow-y: auto;
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    height: 90%;
+    width: 50%;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background: url(./space-3840x2160-earth-milky-way-26169.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;        
+    align-items: center;    
+    flex-direction: column;
+}
+.page2 h2{
+    font-size: 100px;
+    color: white;
+    font-family: integral;
+    margin-bottom: 50px;
+}
+.page2 p{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 70%;
+    height: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 10px 10px;
+}
+@media only screen and (max-width:) {
+    
+}

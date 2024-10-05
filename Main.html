@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Climate Story </title>
+    <link rel="shortcut icon" href="NASA logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</head>
+<body>
+    <div class="cursor" id="cursor">
+        <img src="Cursor.png" alt="cursor">
+    </div>
+    <nav>
+        <div class="logo" id="logo">
+            <img src="./NASA logo.png" alt="Nasa Logo" width="80px">
+        </div>
+        <ul>
+            <li id="intro"><a><p>Introduction</p></a></li>
+            <li id="ex"><a><p>Story</p></a></li>
+            <li id="prediction_btn"><a><p>Prediction</p></a></li>
+        </ul>
+    </nav>
+    <section class="sec1" id="sec1">
+        <div class="main_text" id="main_text">
+            <!-- <img src="astr.png" alt="astr"> -->
+            <div class="all">
+                <div class="text">
+                    <h1 style="margin-bottom: 40px;">Climate Story:</h1>
+                    <h1>We dont really know our <span style="color: rgb(255, 179, 0); font-weight: 900;">CO2</span> footprint</h1>
+                    <h2>Do we?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="waving_sec">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+    </section>
+
+    <div class="page2" id="intro_page">
+        <h2>INTRODUCTION</h2>
+        <p>This webpage is designed to tell the story of CO2 emissions and their impact on the environment. Our goal is to give you a clear, comprehensive view of how your carbon footprint affects the planet. Explore the data, learn about the consequences, and discover how your actions can make a difference in shaping a more sustainable future.</p>
+    </div>
+
+    <div class="container" id="examples">
+        <div class="box">
+            <div class="inner">
+                <h2>CO2 Emision Values for Texas ,Dallas(2000 - 2022)</h2>
+                <div class="content">
+                    <img src="graph1.jpeg" alt="graph" style="min-height: 90%;">
+                    <p>In Texas, life was once defined by the steady hum of trucks on highways, oil refineries billowing smoke, and airplanes crisscrossing the sky. Day after day, CO2 emissions quietly accumulated as people went about their routines, unaware of the invisible impact on the environment. The state's energy-driven economy, particularly in cities like Houston and Dallas, contributed significantly to rising global temperatures. Climate scientists raised alarms, but the changes felt distant and gradual, almost easy to ignore.
+                        <br> <br>Then, in 2020, the COVID-19 pandemic brought everything to a standstill. Lockdowns emptied roads, slowed oil production, and grounded planes. The once-lively energy of Texas faded, and in that silence, something remarkable occurred—CO2 emissions dropped dramatically. The air cleared, skies brightened, and pollution levels fell across the state. Texans, for the first time, saw how drastically their actions affected the environment. This shift was a powerful reminder that even in a state synonymous with energy production, small changes can make a big difference in reducing our carbon footprint and protecting the planet’s future.</p>
+                </div>
+                <!-- <div class="circle"></div> -->
+            </div>
+            <img src="row.png" class="row" style="rotate: 270deg;
+            margin-left: 20px;">
+        </div>
+        <div class="box">
+            <img src="row.png" class="row">
+            <div class="inner">
+                <h2>CO2 Emision Values for coastal California (2020 - 2022)</h2>
+                <div class="content">
+                    <img src="graph2.jpeg" alt="graph" style="min-height: 90%;">
+                    <p>The new graph illustrates the environmental changes following the Texas era, highlighting the ongoing challenges faced by the ocean and its carbon dioxide absorption capabilities. As the line climbs higher with each peak, it reflects a troubling trend: the ocean is increasingly unable to absorb carbon dioxide effectively, signaling a decline in its health. The lower points of the graph, which once indicated significant absorption during colder months, are now shallower, showcasing the ocean's diminishing capacity to take in this greenhouse gas. This shift emphasizes the urgent need to address rising carbon emissions and their impacts on marine ecosystems. The data serves as a crucial reminder that without concerted efforts to protect the environment, the consequences for both the ocean and the planet's climate will continue to grow more severe.</p>
+                </div>
+                <!-- <div class="circle"></div> -->
+            </div>
+            <img src="row.png" class="row">
+        </div>
+        <div class="box" id="prediction_widget">
+            <img src="row.png" class="row">
+            <div class="inner">
+                <h2 style="font-size: 30px;">Machine Learing Model</h2>
+                <div class="content" style="flex-direction: column;">
+                    <img src="pred2025.png" alt="graph" style="height: 100%; width: 90%;">
+                    <p style="width: 90%; margin-top: 30px; line-height: 30px;">To address these concerns, I developed a machine learning model that utilizes logistic regression to forecast the current environmental situation as either "safe" or "danger."
+                        By analyzing data trends, including carbon dioxide levels my model can provide timely predictions about the state of our ecosystems.
+                        This tool is designed to increase awareness and enhance people's mindsets when it comes to climate changes and dangers. <a href="https://colab.research.google.com/drive/162kjWlXm5yl4gw6nFZKERq5G0XuXxttT?usp=sharing" style="color: rgb(255, 52, 52); text-decoration: none;">https://colab.research.google.com/drive/162kjWlXm5yl4gw6nFZKERq5G0XuXxttT?usp=sharing</a></p>
+                </div>
+                <!-- <div class="circle"></div> -->
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <script src="./Main.js"></script>
+</body>
+</html>
